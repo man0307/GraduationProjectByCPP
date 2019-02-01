@@ -10,3 +10,13 @@ MatrixMultiplication::MatrixMultiplication()
 MatrixMultiplication::~MatrixMultiplication()
 {
 }
+
+
+MatrixMultiplication::MatrixMultiplication()
+{
+}
+
+
+MatrixMultiplication::~MatrixMultiplication()
+{
+}

@@ -7,6 +7,7 @@ public:
 	CannonMatrixMultiplicationAlgorithm(int N, long** matrix1, long** matrix2);
 	~CannonMatrixMultiplicationAlgorithm();
 
+	void setThreadNumber(int threadNumber);
 	
 	//Cannon算法
 	long** cannonCompute();
@@ -17,8 +18,6 @@ public:
 	//打印结果
 	void printResult();
 
-	//当前可使用的计算机核数
-	int AVAILABLE_PROCESSORS = 4;
 
 	//方阵的长度
 	int N;
@@ -33,6 +32,9 @@ public:
 	long** result;
 
 private:
+
+	//当前可使用的计算机核数
+	int AVAILABLE_PROCESSORS = 4;
 
 	//按照一定的规则将矩阵分成的块按某行循环移动
 	void loopLeftShiftByRow(long** matrix, int subMatrixLength, int rowNum, int step);
