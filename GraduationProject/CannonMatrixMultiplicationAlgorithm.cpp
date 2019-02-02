@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 struct CannonContext
 {
 public:
@@ -46,6 +45,11 @@ CannonMatrixMultiplicationAlgorithm::~CannonMatrixMultiplicationAlgorithm()
 	
 }
 
+void CannonMatrixMultiplicationAlgorithm::setThreadNumber(int threadNumber)
+{
+	this->AVAILABLE_PROCESSORS = threadNumber;
+}
+
 
 void computingUnit(void * context)
 {
@@ -74,7 +78,8 @@ long ** CannonMatrixMultiplicationAlgorithm::cannonCompute()
 	//¼ÆËãµã»ý
 	int blockNum = matrixLength / subMatrixLength;
 	for (int m = 0; m < blockNum; m++) {
-		HANDLE* works = new  HANDLE[blockNum*blockNum];
+		
+		HANDLE* works = (HANDLE*)malloc(blockNum*blockNum * sizeof(HANDLE));
 		int index = 0;
 		for (int i = 0; i < blockNum; i++) {
 			for (int j = 0; j < blockNum; j++) {

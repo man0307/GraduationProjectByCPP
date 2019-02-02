@@ -18,7 +18,28 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="fasf.h">
+    <ClInclude Include="CannonMatrixMultiplicationAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OrdinaryMatrixMultiplicationAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxMatrixMultiplicationAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JacobiIterationSerialAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JacobiIterationParallelAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussSedelIterationSerialAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussSedelIterationParallelAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProducerAndConsumer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,7 +50,28 @@
     <ClCompile Include="GraduationProject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="fasf.cpp">
+    <ClCompile Include="CannonMatrixMultiplicationAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OrdinaryMatrixMultiplicationAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxMatrixMultiplicationAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JacobiIterationSerialAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JacobiIterationParallelAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussSedelIterationSerialAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussSedelIterationParallelAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProducerAndConsumer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
