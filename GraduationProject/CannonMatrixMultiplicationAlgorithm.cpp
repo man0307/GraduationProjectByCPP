@@ -79,7 +79,6 @@ long ** CannonMatrixMultiplicationAlgorithm::cannonCompute()
 	int blockNum = matrixLength / subMatrixLength;
 	for (int m = 0; m < blockNum; m++) {
 		
-		//HANDLE* works = new  HANDLE[blockNum*blockNum];
 		HANDLE* works = (HANDLE*)malloc(blockNum*blockNum * sizeof(HANDLE));
 		int index = 0;
 		for (int i = 0; i < blockNum; i++) {
